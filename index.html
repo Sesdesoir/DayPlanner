@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Planner</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+<div class="top">
+    <div class="top-text">
+        <h1>Day Planner</h1>
+        <p>A simple calendar app</p>
+    </div>
+</div>
+<div class="row present">
+    <div class="col-2"></div><div class="col" id="present"></div><div class="col-2"></div>
+  </div>
+<hr style="opacity: 100%; color: black; height: 2vh;">
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-xs-0 col-sm-1 col-md-2 col-lg-2 col-xl-2 col-xxl-2">&nbsp;</div><div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2 time">9 AM</div><div id="nine" class="col text"><div class="mb-3"><textarea id="9text" class="form-control textField" placeholder="Event" style="height: 68px"></textarea></div></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1 save" id="9save"><i class="fas fa-check-circle fa-2x"></i></div><div class="col-xs-0 col-sm-1 col-md-2 col-lg-2 col-xl-2 col-xxl-2">&nbsp;</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-0 col-sm-1 col-md-2 col-lg-2 col-xl-2 col-xxl-2">&nbsp;</div><div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2 time">10 AM</div><div id="ten" class="col text"><div class="mb-3"><textarea id="10text" class="form-control textField" placeholder="Event" style="height: 68px"></textarea></div></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1 save" id="10save"><i class="fas fa-check-circle fa-2x"></i></div><div class="col-xs-0 col-sm-1 col-md-2 col-lg-2 col-xl-2 col-xxl-2">&nbsp;</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-0 col-sm-1 col-md-2 col-lg-2 col-xl-2 col-xxl-2">&nbsp;</div><div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2 time">11 AM</div><div id="eleven" class="col text"><div class="mb-3"><textarea id="11text" class="form-control textField" placeholder="Event" style="height: 68px"></textarea></div></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1 save" id="11save"><i class="fas fa-check-circle fa-2x"></i></div><div class="col-xs-0 col-sm-1 col-md-2 col-lg-2 col-xl-2 col-xxl-2">&nbsp;</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-0 col-sm-1 col-md-2 col-lg-2 col-xl-2 col-xxl-2">&nbsp;</div><div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2 time">12 PM</div><div id="twelve" class="col text"><div class="mb-3"><textarea id="12text" class="form-control textField" placeholder="Event" style="height: 68px"></textarea></div></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1 save" id="12save"><i class="fas fa-check-circle fa-2x"></i></div><div class="col-xs-0 col-sm-1 col-md-2 col-lg-2 col-xl-2 col-xxl-2">&nbsp;</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-0 col-sm-1 col-md-2 col-lg-2 col-xl-2 col-xxl-2">&nbsp;</div><div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2 time">1 PM</div><div id="one" class="col text"><div class="mb-3"><textarea id="1text" class="form-control textField" placeholder="Event" style="height: 68px"></textarea></div></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1 save" id="1save"><i class="fas fa-check-circle fa-2x"></i></div><div class="col-xs-0 col-sm-1 col-md-2 col-lg-2 col-xl-2 col-xxl-2">&nbsp;</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-0 col-sm-1 col-md-2 col-lg-2 col-xl-2 col-xxl-2">&nbsp;</div><div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2 time">2 PM</div><div id="two" class="col text"><div class="mb-3"><textarea id="2text" class="form-control textField" placeholder="Event" style="height: 68px"></textarea></div></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1 save" id="2save"><i class="fas fa-check-circle fa-2x"></i></div><div class="col-xs-0 col-sm-1 col-md-2 col-lg-2 col-xl-2 col-xxl-2">&nbsp;</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-0 col-sm-1 col-md-2 col-lg-2 col-xl-2 col-xxl-2">&nbsp;</div><div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2 time">3 PM</div><div id="three" class="col text"><div class="mb-3"><textarea id="3text" class="form-control textField" placeholder="Event" style="height: 68px"></textarea></div></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1 save" id="3save"><i class="fas fa-check-circle fa-2x"></i></div><div class="col-xs-0 col-sm-1 col-md-2 col-lg-2 col-xl-2 col-xxl-2">&nbsp;</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-0 col-sm-1 col-md-2 col-lg-2 col-xl-2 col-xxl-2">&nbsp;</div><div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2 time">4 PM</div><div id="four" class="col text"><div class="mb-3"><textarea id="4text" class="form-control textField" placeholder="Event" style="height: 68px"></textarea></div></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1 save" id="4save"><i class="fas fa-check-circle fa-2x"></i></div><div class="col-xs-0 col-sm-1 col-md-2 col-lg-2 col-xl-2 col-xxl-2">&nbsp;</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-0 col-sm-1 col-md-2 col-lg-2 col-xl-2 col-xxl-2">&nbsp;</div><div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2 time">5 PM</div><div id="five" class="col text"><div class="mb-3"><textarea id="5text" class="form-control textField" placeholder="Event" style="height: 68px"></textarea></div></div><div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1 save" id="5save"><i class="fas fa-check-circle fa-2x"></i></div><div class="col-xs-0 col-sm-1 col-md-2 col-lg-2 col-xl-2 col-xxl-2">&nbsp;</div>
+    </div>
+
+</div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/347692fd4f.js" crossorigin="anonymous"></script>
+    <script src="./assets/luxon.min.js"></script>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
